@@ -27,7 +27,7 @@
 
 $.timeControl = function( configure )
 {
-	return (function( sword, tolerant, effect, meta, fps, stream, interval )
+	return (function( tolerant, effect, meta, fps, stream, interval )
 	{
 		// Start Time
 		stream = 0;
@@ -54,9 +54,6 @@ $.timeControl = function( configure )
 		}, fps );
 	})
 	(
-		// Param: Sword - Recursion Function
-		arguments.callee,
-
 		// Action: Tolerant - Option Tolerant
 		function( option )
 		{
